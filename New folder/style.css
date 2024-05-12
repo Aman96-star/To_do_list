@@ -22,6 +22,19 @@ html,body{
     width: 100%;
     position: relative;
 }
+.main .shape {
+    height: 35vh;
+    width: 100vw;
+    /* background: #000; */
+}
+
+.main  .shape .shape-1{
+    height: 25vh;
+    width: 15vw;
+    background:rgba(80, 132, 209, 0.336); 
+    border-radius: 60%;
+   
+}
 
 .main .content{
     background-color: rgba(20, 18, 18, 0.61);
@@ -34,6 +47,17 @@ html,body{
     bottom: 10%;
 
 
+}
+.main .content .shape {
+    height: 20vh;
+    width: 100vw;
+    background: #000;
+}
+
+.main .content .shape .shape-1{
+    height: 10vh;
+    width: 20vw;
+    background: #5f5353;
 }
 
 .main .content-2{
