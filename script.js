@@ -1,4 +1,5 @@
-var arr = []
+var arr = [] 
+
 function form(event) {
     event.preventDefault(); // Prevent the form from submitting normally
     
@@ -8,15 +9,25 @@ function form(event) {
     }
 
     arr.push(data)
-    // Get the form data
+     
     const formData = new FormData(event.target);
-    arr.forEach(function(elem,index){
-        console.log(elem,index)
-        
-    })
     
+    var d = ""
+    
+    
+    
+    arr.forEach((elm)=> {
+        d= d +`  <div class="t1">
+        <h2>${elm.title}</h2>
+        <p>${elm.description}</p>
+        </div>`
+        
+    });
+    
+    
+    let content=document.querySelector('.tasks');
+    content.innerHTML=d;
 }
-   
-var note =document.getElementsByClassName('content-2');
-console.log(note);
-
+    
+    
+  
